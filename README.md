@@ -3,7 +3,7 @@ UAS PemWebFramework
 
 Welcome to E-commerce API! This application provides various endpoints for managing users, products, reviews, and orders within an e-commerce and online store environment. Designed with simplicity, security, and efficiency in mind, this API invites you to explore its core functionalities that drive seamless e-commerce experiences!
 
-##Table of Contents##
+# Table of Contents
 E-commerce API
 Table of Contents
 Introduction
@@ -17,14 +17,14 @@ Useful Takeaways
 Introduction
 This Express.js application serves as the backend for an e-commerce platform, credits to John Smilga for the valuable insights and knowledge shared in his node.js course. The application allows users to register, log in, browse products, leave reviews, and create orders. The API is designed to be secure, scalable, and easy to use.
 
-##Features##
+# Features
 User authentication and authorization.
 CRUD operations for users, products, reviews, and orders.
 File upload functionality for product images.
 Security measures, including rate limiting, helmet protection, and data sanitization.
 Error handling and logging for improved debugging.
 
-##Installation##
+# Installation
 Clone the repository: git clone https://github.com/afdifznsyh/e-commerce.git
 Install dependencies: npm install
 Rename the .env.example file to .env.
@@ -35,7 +35,7 @@ To start the server, run the following command:
 npm start
 The server will start on the specified port (or default to 5000 if not changed in the .env file).
 
-##API Endpoints##
+# API Endpoints
 Authentication:
 
 POST /api/v1/auth/register - Register a new user.
@@ -69,7 +69,7 @@ POST /api/v1/orders - Create a new order.
 PUT /api/v1/orders/:id - Update an order by ID (admin only).
 DELETE /api/v1/orders/:id - Delete an order by ID (admin only).
 
-##Security##
+# Security
 This API implements several security measures, including:
 
 Rate Limiting: Limits the number of requests a client can make within a specified time frame.
@@ -78,16 +78,13 @@ XSS Protection: Sanitizes user input to prevent cross-site scripting attacks.
 Data Sanitization: Prevents NoSQL query injection by sanitizing user-supplied data.
 CORS: Enables Cross-Origin Resource Sharing to control which domains can access the API.
 
-##Documentation##
+# Documentation
 API Documentation
 You can access the API documentation by visiting the root route of the application. The documentation provides detailed information about the API endpoints, request/response formats, and usage examples.
 
 How to View: Simply open your web browser and go to the root route, for example, http://localhost:5000.
 
-Guidance: Refer to this documentation for instructions on interacting with the API effectively and making the most of its features.
-
-
-##Useful Takeaways##
+# Useful Takeaways
 We've included a utils folder for easy integration into other projects.
 
 Consider using an object for function arguments (as seen in the createJWT function in jwt.js) to eliminate concerns about argument order.
